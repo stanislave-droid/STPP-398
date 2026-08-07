@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pop Island: Match Build</title>
+    <title>Terms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,27 +23,15 @@
   <body>
     <load
       src="./partials/header.html"
-      icon-path="img/sprite.svg#icon-playmarket"
+      icon-path="./img/sprite.svg#playmarket"
     />
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load
-        src="./partials/hero.html"
-        icon-path="img/sprite.svg#icon-playmarket"
-      />
-      <load src="./partials/about.html" />
-      <load src="./partials/core-gameplay.html" />
-      <load src="./partials/gallery.html" />
-      <load src="./partials/reviews.html" />
-      <load
-        src="./partials/why-download.html"
-        icon-path="img/sprite.svg#icon-playmarket"
-      />
+      <div class="container">
+        <load src="./partials/back-link.html" />
+      </div>
     </main>
 
     <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
   </body>
 </html>

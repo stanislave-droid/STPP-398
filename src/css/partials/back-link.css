@@ -1,0 +1,13 @@
+.back-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary-background-color);
+  fill: transparent;
+  stroke: var(--primary-background-color);
+  width: 203px;
+  height: 55px;
+}

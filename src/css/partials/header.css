@@ -1,0 +1,11 @@
+.header {
+  padding: 20px 0;
+}
+
+[data-visible='open'] {
+  display: flex;
+}
+
+[data-visible='close'] {
+  display: none;
+}
