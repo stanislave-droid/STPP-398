@@ -11,3 +11,24 @@
   width: 203px;
   height: 55px;
 }
+
+.legal-page-terms .back-link {
+  color: var(--primary-headding-color);
+  stroke: var(--primary-headding-color);
+  width: 198px;
+  height: 54px;
+}
+
+@media screen and (min-width: 1440px) {
+  .legal-page-terms .back-link {
+    width: 126px;
+    height: 34px;
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  .legal-page-terms .back-link svg {
+    width: 7px;
+    height: 13px;
+  }
+}
