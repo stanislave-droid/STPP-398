@@ -3,14 +3,14 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% auto;
-  background-image: url('/img/partials/footer/footer-wave.jpg');
+  background-image: url('/img/partials/footer/footer-wave.png');
   background-image: -webkit-image-set(
-    url('/img/partials/footer/footer-wave.jpg') 1x,
-    url('/img/partials/footer/footer-wave-2x.jpg') 2x
+    url('/img/partials/footer/footer-wave.png') 1x,
+    url('/img/partials/footer/footer-wave-2x.png') 2x
   );
   background-image: image-set(
-    url('/img/partials/footer/footer-wave.jpg') 1x,
-    url('/img/partials/footer/footer-wave-2x.jpg') 2x
+    url('/img/partials/footer/footer-wave.png') 1x,
+    url('/img/partials/footer/footer-wave-2x.png') 2x
   );
   color: var(--primary-headding-color);
 }
@@ -51,6 +51,11 @@
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
+}
+
+.footer-link[aria-current='page'] {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .footer-link:hover {

@@ -25,18 +25,19 @@
       src="./partials/header.html"
       icon-path="./img/sprite.svg#playmarket"
       visible="header-links-hidden"
+      variant="header-terms-hidden"
     />
 
-    <main class="legal-page">
+    <main class="legal-page legal-page-terms">
       <div class="legal-wave" aria-hidden="true"></div>
 
       <div class="container">
-        <load src="./partials/back-link.html" />
+        <div class="terms-outer">
+          <load src="./partials/back-link.html" />
 
-        <h1 class="legal-title">Terms of Service</h1>
+          <h1 class="legal-title headding-primary-shadow">Terms of Service</h1>
 
-        <div class="legal-content">
-          <section>
+          <div class="legal-intro">
             <p>
               These Terms of Service (&ldquo;<strong>Terms of Service</strong>&rdquo;) apply to
               the website located at <span class="app-domain">coreparcel.online</span>
@@ -52,8 +53,10 @@
               USE AND ALL OTHER APPLICABLE TERMS, CONDITIONS, AND POLICIES THAT
               SUPPLEMENT IT. <strong>IF YOU DO NOT AGREE, DO NOT USE THE SITE.</strong>
             </p>
-          </section>
+          </div>
+        </div>
 
+        <div class="legal-content">
           <section>
             <h2>Proprietary and Use Rights</h2>
             <p>
@@ -295,6 +298,8 @@
       </div>
     </main>
 
-    <load src="./partials/footer.html" wave="footer-no-wave" />
+    <load src="./partials/footer.html" wave="footer-no-wave" policyCurrent="" termsCurrent=" aria-current=page" />
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

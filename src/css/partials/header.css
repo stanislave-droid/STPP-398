@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.header-hidden {
+  display: none;
+}
+
 .header > .container {
   background-image: url('/img/partials/header/header-background-mob.png');
   background-size: cover;
@@ -133,6 +137,10 @@
   }
 
   .header-burger-menu {
+    display: none;
+  }
+
+  .header-terms-hidden {
     display: none;
   }
 }
