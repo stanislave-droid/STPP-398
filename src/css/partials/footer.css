@@ -1,22 +1,21 @@
 .footer {
-  background-color: #1172ba;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% auto;
-  background-image: url('/img/partials/footer/footer-wave.png');
-  background-image: -webkit-image-set(
-    url('/img/partials/footer/footer-wave.png') 1x,
-    url('/img/partials/footer/footer-wave-2x.png') 2x
-  );
-  background-image: image-set(
-    url('/img/partials/footer/footer-wave.png') 1x,
-    url('/img/partials/footer/footer-wave-2x.png') 2x
-  );
+  background-color: #FFE29C;
   color: var(--primary-headding-color);
 }
 
-.footer-no-wave {
-  background-image: none;
+.footer:not(.footer-no-wave) {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  background-image: url('/img/partials/footer/footer-wave-mob.png');
+  background-image: -webkit-image-set(
+    url('/img/partials/footer/footer-wave-mob.png') 1x,
+    url('/img/partials/footer/footer-wave-mob-2x.png') 2x
+  );
+  background-image: image-set(
+    url('/img/partials/footer/footer-wave-mob.png') 1x,
+    url('/img/partials/footer/footer-wave-mob-2x.png') 2x
+  );
 }
 
 .footer-container {
@@ -33,9 +32,21 @@
 }
 
 .footer-logo {
+  display: inline-flex;
   width: auto;
   max-width: 100%;
   padding: 0;
+}
+
+.footer-logo img {
+  content: -webkit-image-set(
+    url('/img/partials/footer/Pop Island_ Match Build.png') 1x,
+    url('/img/partials/footer/Pop Island_ Match Build2x.png') 2x
+  );
+  content: image-set(
+    url('/img/partials/footer/Pop Island_ Match Build.png') 1x,
+    url('/img/partials/footer/Pop Island_ Match Build2x.png') 2x
+  );
 }
 
 .footer-links {
@@ -75,6 +86,18 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .footer:not(.footer-no-wave) {
+    background-image: url('/img/partials/footer/footer-wave.png');
+    background-image: -webkit-image-set(
+      url('/img/partials/footer/footer-wave.png') 1x,
+      url('/img/partials/footer/footer-wave-2x.png') 2x
+    );
+    background-image: image-set(
+      url('/img/partials/footer/footer-wave.png') 1x,
+      url('/img/partials/footer/footer-wave-2x.png') 2x
+    );
+  }
+
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
@@ -93,7 +116,7 @@
   .footer-links {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px 32px;
+    gap: 16px 189px;
   }
 
   .footer-copyright {
