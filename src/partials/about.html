@@ -1,3 +1,74 @@
-<section class="about" id="about" data-observer="section">
-  <div class="container"></div>
+<section
+  class="about"
+  id="about"
+  data-observer="section"
+  aria-label="about the game"
+>
+  <div class="container">
+    <picture>
+      <source
+        srcset="
+          /img/partials/about/about-castle.png,
+          /img/partials/about/about-castle-2x.png 2x
+        "
+        media="(width >= 1440px)"
+        width="737"
+        height="702"
+      />
+      <img
+        src="/img/partials/about/about-castle-mob.png"
+        srcset="/img/partials/about/about-castle-mob-2x.png 2x"
+        alt="Castle with penguin"
+        width="334"
+        height="303"
+        class="about-castle-img"
+      />
+    </picture>
+    <div
+      class="about-content-wrapper"
+      aria-label="content of the section about"
+    >
+      <p class="about-label section-label">About the Game</p>
+      <h2 class="about-headding headding-primary-shadow">
+        Build a thriving island one puzzle at a time
+      </h2>
+      <p class="about-text about-text-first">
+        Every completed puzzle provides resources to rebuild abandoned
+        structures, decorate landscapes, and expand the island. As players
+        progress, new districts, exciting renovation projects, and charming
+        stories unfold across the tropical world.
+      </p>
+      <p class="about-text about-text-second">
+        From quiet beaches to lively marketplaces, every improvement makes the
+        island feel more alive.
+      </p>
+    </div>
+    <img
+      src="/img/partials/about/about-star.png"
+      srcset="/img/partials/about/about-star-2x.png 2x"
+      alt="About star"
+      width="100"
+      height="97"
+      class="about-small-star-img"
+    />
+    <picture>
+      <source
+        srcset="
+          /img/partials/about/about-sand.png,
+          /img/partials/about/about-sand-2x.png 2x
+        "
+        media="(width >= 1440px)"
+        width="1440"
+        height="97"
+      />
+      <img
+        src="/img/partials/about/about-sand-mob.png"
+        srcset="/img/partials/about/about-sand-mob-2x.png 2x"
+        width="375"
+        height="57"
+        alt="About sand"
+        class="about-sand"
+      />
+    </picture>
+  </div>
 </section>
