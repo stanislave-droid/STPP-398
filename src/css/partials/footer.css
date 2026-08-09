@@ -2,7 +2,6 @@
   position: relative;
   z-index: 1;
   margin-top: -10px;
-  background-color: #FFE29C;
   color: var(--primary-headding-color);
 }
 

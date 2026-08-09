@@ -1,16 +1,30 @@
 .why-download {
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
+}
+
+.why-download > .container {
+  position: relative;
   background-color: var(--primary-background-color);
-  padding-top: 64px;
+  padding-top: 0;
   padding-bottom: 163px;
+}
+
+.why-download > .container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 10px;
+  z-index: -2;
+  background-color: var(--primary-background-color);
+  pointer-events: none;
 }
 
 .why-download-decor {
   position: absolute;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -19,7 +33,7 @@
 
 .why-download-decor-left {
   left: 0;
-  bottom: -24px;
+  bottom: 10px;
   width: 90px;
   height: 163px;
   background-image: url('/img/partials/who dowload/line-left-mob.png');
@@ -31,7 +45,7 @@
 
 .why-download-decor-right {
   right: 0;
-  bottom: -24px;
+  bottom: 10px;
   width: 89px;
   height: 163px;
   background-image: url('/img/partials/who dowload/line-rigth-mob.png');
@@ -102,13 +116,13 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .why-download {
+  .why-download > .container {
     padding-top: 96px;
     padding-bottom: 144px;
   }
 
   .why-download-decor-left {
-    bottom: -48px;
+    bottom: -28px;
     width: 298px;
     height: 540px;
     background-image: url('/img/partials/who dowload/line-left.png');
@@ -119,7 +133,7 @@
   }
 
   .why-download-decor-right {
-    bottom: -48px;
+    bottom: -28px;
     width: 298px;
     height: 540px;
     background-image: url('/img/partials/who dowload/line-right.png');
@@ -127,11 +141,6 @@
         url('/img/partials/who dowload/line-right2x.png') 2x);
     background-image: image-set(url('/img/partials/who dowload/line-right.png') 1x,
         url('/img/partials/who dowload/line-right2x.png') 2x);
-  }
-
-  .why-download-container {
-    max-width: 720px;
-    margin: 0 auto;
   }
 
   .why-download-heading {
@@ -149,7 +158,7 @@
     max-width: 100%;
     min-height: 64px;
     height: 64px;
-    margin-top: 32px;
+    margin-top: 16px;
     padding: 16px 32px;
     gap: 10px;
     font-size: 18px;
