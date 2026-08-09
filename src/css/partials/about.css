@@ -35,7 +35,9 @@
 }
 
 .about-castle-img {
+  position: relative;
   transform: translateX(-19%);
+  z-index: -2;
 }
 
 .about-small-star-img {
@@ -45,10 +47,10 @@
 
 .about-sand {
   position: absolute;
-  z-index: -1;
   bottom: 0;
   transform: translateY(26%);
   left: 0;
+  z-index: -3;
 }
 
 @media screen and (min-width: 1440px) {
