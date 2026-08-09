@@ -1,6 +1,11 @@
 .header {
   position: fixed;
+  z-index: 999;
   width: 100%;
+}
+
+.header-hidden {
+  display: none;
 }
 
 .header > .container {
@@ -40,18 +45,22 @@
   position: absolute;
   bottom: 33px;
   left: 0;
-  width: 100%;
+  width: 1%;
   height: 2px;
   background-color: var(--primary-text-color);
-  transition: opacity 0.2s ease-in-out;
+  transition:
+    opacity 0.2s ease-in-out,
+    width 0.2s ease-in-out;
 }
 
 [data-link='active'].header-link::after {
   opacity: 1;
+  width: 100%;
 }
 
 .header-link:hover::after {
   opacity: 1;
+  width: 100%;
 }
 
 .header-playmarket-link {
@@ -133,6 +142,10 @@
   }
 
   .header-burger-menu {
+    display: none;
+  }
+
+  .header-terms-hidden {
     display: none;
   }
 }
