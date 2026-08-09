@@ -200,6 +200,10 @@
   .core-gameplay-island-text {
   }
 
+  .core-gameplay-wave-wrapper {
+    top: -78px;
+  }
+
   /* Centering island content*/
 
   .core-gameplay-island:nth-child(4) {
