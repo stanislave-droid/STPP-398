@@ -1,11 +1,58 @@
 .legal-page-policy {
+  padding-bottom: 64px;
   padding-top: 120px;
 }
+
+.legal-page-policy .legal-wave {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1440 / 166;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  background-image: url('../../img/partials/footer/footer-wave.png');
+  background-image: -webkit-image-set(url('../../img/partials/footer/footer-wave.png') 1x,
+      url('../../img/partials/footer/footer-wave-2x.png') 2x);
+  background-image: image-set(url('../../img/partials/footer/footer-wave.png') 1x,
+      url('../../img/partials/footer/footer-wave-2x.png') 2x);
+  pointer-events: none;
+}
+
+.legal-page-policy .legal-content a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  border-radius: 4px;
+  color: #1275be;
+}
+
+.legal-page-policy .legal-content a:visited,
+.legal-page-policy .legal-content a:hover,
+.legal-page-policy .legal-content a:focus-visible,
+.legal-page-policy .legal-content a:active {
+  color: #1275be;
+}
+
+.legal-page-policy .legal-content a:focus-visible {
+  outline: 2px solid var(--primary-text-color);
+  outline-offset: 4px;
+}
+
 /* policy.css */
 .legal-page-policy .legal-content h2 {
   color: #122a52;
 }
 @media screen and (min-width: 1440px) {
+  .legal-page-policy {
+    padding-bottom: 96px;
+  }
+
+  .legal-page-policy .legal-wave {
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
   .legal-page.legal-page-policy {
     padding-bottom: 0;
     flex-grow: 0;
