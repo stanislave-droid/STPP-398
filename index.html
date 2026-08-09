@@ -18,13 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script type="module" crossorigin src="/STPP-398/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/STPP-398/assets/vendor-BbZn6H4r.js">
+    <script type="module" crossorigin src="/STPP-398/assets/vendor-BbZn6H4r.js"></script>
+    <script type="module" crossorigin src="/STPP-398/assets/main-BOIMQX68.js"></script>
     <link rel="stylesheet" crossorigin href="/STPP-398/assets/vendor-B0a9OMnn.css">
-    <link rel="stylesheet" crossorigin href="/STPP-398/assets/styles-DaWLl2GM.css">
+    <link rel="stylesheet" crossorigin href="/STPP-398/assets/styles-B-IovedR.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
   <div class="container">
     <nav class="main-navigation">
       <a href="./index.html" class="header-logo logo"
@@ -55,15 +55,15 @@
         target="_blank"
       >
         <svg width="22" height="24">
-          <use href="/STPP-398/assets/sprite-BUKbXz1E.svg#icon-playmarket"></use>
+          <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-playmarket"></use>
         </svg>
         Play on Google Play</a
-      ><button class="header-burger-menu {=$visible}" data-action="open">
+      ><button class="header-burger-menu" data-action="open">
         <svg width="66" height="32" class="header-burger-menu-open">
-          <use href="/STPP-398/assets/sprite-BUKbXz1E.svg#icon-burger-menu"></use>
+          <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-burger-menu"></use>
         </svg>
         <svg width="66" height="32" class="header-burger-menu-close">
-          <use href="/STPP-398/assets/sprite-BUKbXz1E.svg#icon-burger-menu-close"></use>
+          <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-burger-menu-close"></use>
         </svg>
       </button>
     </nav>
@@ -73,8 +73,11 @@
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="hero">
-  <div class="hero-image-wrapper container"></div>
+      <section class="hero" aria-label="hero - first section">
+  <div
+    class="hero-image-wrapper container"
+    aria-label="image with a girl and the sea behind"
+  ></div>
   <div class="container">
     <h1 class="hero-headding headding-primary-shadow">
       Match Puzzles. Build Paradise.
@@ -89,19 +92,304 @@
       target="_blank"
     >
       <svg width="28" height="30" class="hero-button-icon">
-        <use href="/STPP-398/assets/sprite-BUKbXz1E.svg#icon-playmarket"></use>
+        <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-playmarket"></use>
       </svg>
       Play on Google Play</a
     >
   </div>
 </section>
 
-      <section class="about" id="about" data-observer="section">
-  <div class="container"></div>
+      <section
+  class="about"
+  id="about"
+  data-observer="section"
+  aria-label="about the game"
+>
+  <div class="container">
+    <picture>
+      <source
+        srcset="/STPP-398/assets/about-castle-B8vjykuB.png, /STPP-398/assets/about-castle-2x-dSKDr9NU.png 2x"
+        media="(width >= 1440px)"
+        width="737"
+        height="702"
+      />
+      <img
+        src="/STPP-398/assets/about-castle-mob-AzU8z-Zw.png"
+        srcset="/STPP-398/assets/about-castle-mob-2x-UPav3257.png 2x"
+        alt="Castle with penguin"
+        width="334"
+        height="303"
+        class="about-castle-img"
+      />
+    </picture>
+    <div
+      class="about-content-wrapper"
+      aria-label="content of the section about"
+    >
+      <p class="about-label section-label">About the Game</p>
+      <h2 class="about-headding headding-primary-shadow">
+        Build a thriving island one puzzle at a time
+      </h2>
+      <p class="about-text about-text-first">
+        Every completed puzzle provides resources to rebuild abandoned
+        structures, decorate landscapes, and expand the island. As players
+        progress, new districts, exciting renovation projects, and charming
+        stories unfold across the tropical world.
+      </p>
+      <p class="about-text about-text-second">
+        From quiet beaches to lively marketplaces, every improvement makes the
+        island feel more alive.
+      </p>
+    </div>
+    <img
+      src="/STPP-398/assets/about-star-VI_LezSF.png"
+      srcset="/STPP-398/assets/about-star-2x-B9mlmx3l.png 2x"
+      alt="About star"
+      width="100"
+      height="97"
+      class="about-small-star-img"
+    />
+    <picture>
+      <source
+        srcset="/STPP-398/assets/about-sand-BRStmX92.png, /STPP-398/assets/about-sand-2x-Cnx3dHd-.png 2x"
+        media="(width >= 1440px)"
+        width="1440"
+        height="97"
+      />
+      <img
+        src="/STPP-398/assets/about-sand-mob-Bukf6KM-.png"
+        srcset="/STPP-398/assets/about-sand-mob-2x-rZB8Ufzq.png 2x"
+        width="375"
+        height="57"
+        alt="About sand"
+        loading="lazy"
+        class="about-sand"
+      />
+    </picture>
+  </div>
 </section>
 
       <section class="core-gameplay" id="core-gameplay" data-observer="section">
-  <div class="container"></div>
+  <div class="container">
+    <div class="core-gameplay-wave-wrapper">
+      <picture>
+        <source
+          srcset="/STPP-398/assets/core-gameplay-first-wave-D44M8oI8.png, /STPP-398/assets/core-gameplay-first-wave-2x-SmGPXetF.png 2x"
+          media="(width >= 1440px)"
+          width="1920"
+          height="97"
+        />
+        <img
+          src="/STPP-398/assets/core-gameplay-first-wave-mob-DpZPTD_D.png"
+          srcset="/STPP-398/assets/core-gameplay-first-wave-mob-2x-bZDLJ5nH.png 2x"
+          alt="first wave"
+          loading="lazy"
+          width="525"
+          height="40"
+          class="core-gameplay-wave core-gameplay-first-wave"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/STPP-398/assets/core-gameplay-second-wave-BU0sTr4q.png, /STPP-398/assets/core-gameplay-second-wave-2x-kwkQdzhi.png 2x"
+          media="(width >= 1440px)"
+          width="1920"
+          height="144"
+        />
+        <img
+          src="/STPP-398/assets/core-gameplay-second-wave-mob-BpDuze17.png"
+          srcset="/STPP-398/assets/core-gameplay-second-wave-mob-2x-ACchRpBK.png 2x"
+          width="525"
+          height="58"
+          alt="second-wave"
+          loading="lazy"
+          class="core-gameplay-wave core-gameplay-second-wave"
+        />
+      </picture>
+    </div>
+    <div class="core-gameplay-content-wraper">
+      <p class="core-gameplay-label section-label">Core Gameplay</p>
+      <h2 class="core-gameplay-headding headding-primary-shadow">
+        Match, build, and explore
+      </h2>
+      <ul class="core-gameplay-island-list">
+        <li class="core-gameplay-island">
+          <h3 class="core-gameplay-island-headding">
+            Solve Colorful Match-3 Levels
+          </h3>
+          <p class="core-gameplay-island-text">
+            Complete unique objectives to earn valuable rewards.
+          </p>
+          <picture>
+            <source
+              srcset="/STPP-398/assets/core-gameplay-spinner-B1wjrmrr.png, /STPP-398/assets/core-gameplay-spinner-2x-DfdQBTtA.png 2x"
+              media="(width >= 1440px)"
+              width="127"
+              height="128"
+            />
+            <img
+              src="/STPP-398/assets/core-gameplay-spinner-mob-Dz2aB99o.png"
+              srcset="/STPP-398/assets/core-gameplay-spinner-mob-2x-B83hoEEM.png 2x"
+              width="80"
+              height="80"
+              alt="Spinner"
+              loading="lazy"
+              class="core-gameplay-island-img"
+            />
+          </picture>
+        </li>
+        <li class="core-gameplay-island">
+          <h3 class="core-gameplay-island-headding">
+            Restore Island Buildings
+          </h3>
+          <p class="core-gameplay-island-text">
+            Renovate cottages, cafés, docks, and scenic landmarks.
+          </p>
+          <picture>
+            <source
+              srcset="/STPP-398/assets/core-gameplay-scrap-NLrCGg6E.png, /STPP-398/assets/core-gameplay-scrap-2x-DgzHuCTf.png 2x"
+              media="(width >= 1440px)"
+              width="181"
+              height="114"
+            />
+            <img
+              src="/STPP-398/assets/core-gameplay-scrap-mob-WnBGPfmO.png"
+              srcset="/STPP-398/assets/core-gameplay-scrap-mob-2x-B6hJ_81x.png 2x"
+              width="106"
+              height="67"
+              alt="scrap"
+              loading="lazy"
+              class="core-gameplay-island-img"
+            />
+          </picture>
+        </li>
+        <li class="core-gameplay-island">
+          <h3 class="core-gameplay-island-headding">Unlock New Areas</h3>
+          <p class="core-gameplay-island-text">
+            Explore hidden beaches, tropical forests, waterfalls, and mountain
+            viewpoints.
+          </p>
+          <picture>
+            <source
+              srcset="/STPP-398/assets/core-gameplay-building-BS1Iy5pe.png, /STPP-398/assets/core-gameplay-building-2x-BVygCqQ5.png 2x"
+              media="(width >= 1440px)"
+              width="161"
+              height="139"
+            />
+            <img
+              src="/STPP-398/assets/core-gameplay-building-mob-F-IAKDk2.png"
+              srcset="/STPP-398/assets/core-gameplay-building-mob-2x-DJXqi7At.png 2x"
+              width="106"
+              height="91"
+              alt="building"
+              loading="lazy"
+              class="core-gameplay-island-img"
+            />
+          </picture>
+        </li>
+        <li class="core-gameplay-island">
+          <h3 class="core-gameplay-island-headding">Collect Useful Boosters</h3>
+          <p class="core-gameplay-island-text">
+            Use powerful combinations to overcome challenging puzzles.
+          </p>
+          <picture>
+            <source
+              srcset="/STPP-398/assets/core-gameplay-chest-ga9fTQjc.png, /STPP-398/assets/core-gameplay-chest-2x-C54WnkP1.png 2x"
+              media="(width >= 1440px)"
+              width="125"
+              height="133"
+            />
+            <img
+              src="/STPP-398/assets/core-gameplay-chest-mob-BxKXvifb.png"
+              srcset="/STPP-398/assets/core-gameplay-chest-mob-2x-B7pXxpRu.png 2x"
+              width="82"
+              height="87"
+              alt="chest"
+              loading="lazy"
+              class="core-gameplay-island-img"
+            />
+          </picture>
+        </li>
+        <li class="core-gameplay-island">
+          <h3 class="core-gameplay-island-headding">
+            Personalize Your Paradise
+          </h3>
+          <p class="core-gameplay-island-text">
+            Decorate outdoor spaces with flowers, pathways, and island
+            ornaments.
+          </p>
+          <picture>
+            <source
+              srcset="/STPP-398/assets/core-gameplay-dog-Bg8Nvywr.png, /STPP-398/assets/core-gameplay-dog-2x-Dz_u2yxD.png 2x"
+              media="(width >= 1440px)"
+              width="155"
+              height="184"
+            />
+            <img
+              src="/STPP-398/assets/core-gameplay-dog-mob-LW_66Bcv.png"
+              srcset="/STPP-398/assets/core-gameplay-dog-mob-2x-C5K0aDhK.png 2x"
+              width="75"
+              height="90"
+              alt="dog"
+              loading="lazy"
+              class="core-gameplay-island-img"
+            />
+          </picture>
+        </li>
+      </ul>
+      <picture>
+        <source
+          srcset="/STPP-398/assets/core-gameplay-orange-star-1Bg0Tsr1.png, /STPP-398/assets/core-gameplay-orange-star-2x-7_8at-kl.png 2x"
+          media="(width >= 1440px)"
+          width="139"
+          height="133"
+        />
+        <img
+          src="/STPP-398/assets/core-gameplay-orange-star-mob-D-KMZQMa.png"
+          srcset="/STPP-398/assets/core-gameplay-orange-star-mob-2x-Dp65tThu.png 2x"
+          width="94"
+          height="90"
+          alt="orange-star"
+          loading="lazy"
+          class="core-gameplay-orange-star"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/STPP-398/assets/core-gameplay-blue-star-fnJ1qNYf.png, /STPP-398/assets/core-gameplay-blue-star-2x-Bnt_vtIR.png 2x"
+          media="(width >= 1440px)"
+          width="149"
+          height="137"
+        />
+        <img
+          src="/STPP-398/assets/core-gameplay-blue-star-mob-EbFNNQLd.png"
+          srcset="/STPP-398/assets/core-gameplay-blue-star-mob-2x-ljBItiYa.png 2x"
+          width="109"
+          height="101"
+          alt="blue-star"
+          loading="lazy"
+          class="core-gameplay-blue-star"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/STPP-398/assets/core-gameplay-rope-CDJvvah7.png, /STPP-398/assets/core-gameplay-rope-2x-Bj_58EsS.png 2x"
+          media="(width >= 1440px)"
+          width="259"
+          height="927"
+        />
+        <img
+          src="/STPP-398/assets/core-gameplay-rope-mob-DmYqzIe8.png"
+          srcset="/STPP-398/assets/core-gameplay-rope-mob-2x-C_7NwnkW.png 2x"
+          width="259"
+          height="805"
+          alt="rope"
+          loading="lazy"
+          class="core-gameplay-rope"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
 
       <section class="gallery" id="gallery" data-observer="section">
@@ -109,17 +397,157 @@
 </section>
 
       <section class="reviews" id="reviews" data-observer="section">
-  <div class="container"></div>
+  <div class="container reviews-container">
+    <img
+      class="reviews-decor reviews-decor-left"
+      src="/STPP-398/assets/air-BUL29gFh.png"
+      alt=""
+      aria-hidden="true"
+      width="85"
+      height="83"
+    />
+    <img
+      class="reviews-decor reviews-decor-right"
+      src="/STPP-398/assets/money-BQ3pu4v6.png"
+      alt=""
+      aria-hidden="true"
+      width="123"
+      height="125"
+    />
+    <p class="reviews-eyebrow">Reviews</p>
+    <h2 class="reviews-heading headding-primary-shadow">
+      Players are building<br class="reviews-heading-break" />
+      their dream island
+    </h2>
+    <div class="reviews-grid">
+      <ul class="reviews-row">
+        <li class="reviews-card">
+          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+          </div>
+          <p class="reviews-author">Emma R.</p>
+          <p class="reviews-text">
+            "Every renovation makes the island more beautiful. It's hard to
+            stop playing!"
+          </p>
+        </li>
+        <li class="reviews-card">
+          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+          </div>
+          <p class="reviews-author">Daniel M.</p>
+          <p class="reviews-text">
+            "A relaxing combination of match-3 puzzles and island building."
+          </p>
+        </li>
+      </ul>
+      <ul class="reviews-row">
+        <li class="reviews-card">
+          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+          </div>
+          <p class="reviews-author">Sophia K.</p>
+          <p class="reviews-text">
+            "The tropical scenery is gorgeous, and the progression feels
+            rewarding."
+          </p>
+        </li>
+        <li class="reviews-card">
+          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+          </div>
+          <p class="reviews-author">James T.</p>
+          <p class="reviews-text">
+            "Great puzzle variety with lots of decorations to unlock."
+          </p>
+        </li>
+        <li class="reviews-card">
+          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+          </div>
+          <p class="reviews-author">Olivia P.</p>
+          <p class="reviews-text">
+            "Perfect game for anyone who loves relaxing adventures and
+            creative building."
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
 
       <section class="why-download" id="why-download" data-observer="section">
-  <div class="container"></div>
+  <div class="container why-download-container">
+    <div class="why-download-decor why-download-decor-left" aria-hidden="true"></div>
+    <p class="why-download-eyebrow">Why Download</p>
+    <h2 class="why-download-heading headding-primary-shadow">
+      Escape to your own<br />tropical paradise
+    </h2>
+    <p class="why-download-text">
+      Pop Island: Match Build combines relaxing puzzle gameplay with
+      rewarding island restoration. Every completed level transforms the
+      environment, unlocks new discoveries, and brings players closer to
+      creating a dream destination filled with beauty and adventure.
+    </p>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.hmbdgames.popisland&hl=en&gl=us"
+      class="why-download-button button-effects"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg width="24" height="27" class="why-download-button-icon">
+        <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-playmarket"></use>
+      </svg>
+      Play on Google Play</a
+    >
+    <div class="why-download-decor why-download-decor-right" aria-hidden="true"></div>
+  </div>
 </section>
 
     </main>
 
-    <footer class="footer">
-  <div class="container"></div>
+    <footer class="footer {=$wave}">
+  <div class="container">
+    <a href="./index.html" class="footer-logo">
+      <img
+        src="/STPP-398/assets/Pop%20Island_%20Match%20Build-B90bTE8n.png"
+        width="132"
+        height="55"
+        alt="Pop Island: Match Build"
+      />
+    </a>
+    <ul class="footer-links">
+      <li class="footer-links-item">
+        <a href="./policy.html" class="footer-link">Privacy Policy</a>
+      </li>
+      <li class="footer-links-item">
+        <a href="./terms.html" class="footer-link">Terms of Service</a>
+      </li>
+    </ul>
+    <p class="footer-copyright">
+      &copy; 2026 coreparcel.online — All rights reserved.
+    </p>
+  </div>
 </footer>
 
 
