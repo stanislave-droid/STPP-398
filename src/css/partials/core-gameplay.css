@@ -285,3 +285,13 @@
     right: 670px;
   }
 }
+
+@media screen and (min-width: 1440px) and (min-resolution: 2x) and (-webkit-device-pixel-ratio: 2) {
+  .core-gameplay > .container {
+    background-image: url('/img/partials/core-gameplay/core-gameplay-background-2x.png');
+  }
+
+  .core-gameplay-island {
+    background-image: url('/img/partials/core-gameplay/core-gameplay-island-2x.png');
+  }
+}
