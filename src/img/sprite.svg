@@ -12,6 +12,9 @@
 <symbol id="icon-back-button-arrow" viewBox="0 0 18 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M16 1.778l-14.222 14.222 14.222 14.222"></path>
 </symbol>
+<symbol id="icon-star" viewBox="0 0 20 20">
+<path d="M10 1l2.472 6.545 6.955.615-5.257 4.66 1.583 6.83L10 15.9l-5.753 3.75 1.583-6.83L.573 8.16l6.955-.615L10 1z"></path>
+</symbol>
 <symbol id="icon-playmarket" viewBox="0 0 21 24">
 <path fill="#ea4335" style="fill: var(--color2, #ea4335)" d="M9.963 11.442l-9.874 10.528c0.111 0.4 0.31 0.769 0.583 1.078s0.611 0.552 0.989 0.708c0.378 0.156 0.787 0.222 1.194 0.193s0.803-0.153 1.156-0.361l11.111-6.44-5.158-5.706z"></path>
 <path fill="#fbbc04" style="fill: var(--color3, #fbbc04)" d="M19.947 9.652l-4.805-2.801-5.408 4.83 5.43 5.451 4.768-2.771c0.422-0.225 0.776-0.564 1.023-0.979s0.377-0.891 0.377-1.376c0-0.485-0.131-0.961-0.377-1.376s-0.601-0.754-1.023-0.979l0.015 0z"></path>
