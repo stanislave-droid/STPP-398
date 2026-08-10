@@ -20,6 +20,10 @@
   --logo-shadow-color: #664200;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
