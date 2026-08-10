@@ -5,10 +5,9 @@
   gap: 8px;
   font-weight: 500;
   font-size: 20px;
-  color: var(--primary-background-color);
+  color: var(--primary-headding-color);
   fill: transparent;
-  stroke: var(--primary-background-color);
+  stroke: var(--primary-headding-color);
   width: 203px;
   height: 55px;
 }
-
