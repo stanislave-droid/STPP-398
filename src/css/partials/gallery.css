@@ -1,0 +1,134 @@
+.gallery > .container {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 188px;
+}
+
+.gallery-label {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.gallery-headding {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 121px;
+}
+
+.gallery-log {
+  position: absolute;
+  top: 309px;
+  left: 0;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item-title {
+  position: absolute;
+  top: 24px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: var(--primary-headding-color);
+}
+
+.gallery-item-img {
+}
+
+.gallery-item-text {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  border: 2px solid #664200;
+  border-radius: 24px;
+  padding: 8px 12px;
+  width: 187px;
+  height: 70px;
+  box-shadow: 0 2px 0 0 #664200;
+  background-color: #f6e8ce;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gallery-item:nth-child(4) > .gallery-item-text {
+  height: 88px;
+  padding: 8px 18px;
+}
+
+.gallery-tree {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery > .container {
+    padding: bottom;
+  }
+
+  .gallery-label {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .gallery-headding {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .gallery-log {
+    top: 323px;
+  }
+
+  .gallery-list {
+    max-width: 1004px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 16px;
+  }
+
+  .gallery-item-title {
+    top: 34px;
+    font-size: 24px;
+  }
+
+  .gallery-item-text {
+    bottom: 32px;
+    left: 32px;
+    font-size: 16px;
+    height: 88px;
+  }
+
+  .gallery-item:nth-child(1) > .gallery-item-text {
+    width: 223px;
+  }
+
+  .gallery-item:nth-child(2) > .gallery-item-text {
+    width: 214px;
+  }
+
+  .gallery-item:nth-child(3) > .gallery-item-text {
+    width: 223px;
+  }
+
+  .gallery-item:nth-child(4) > .gallery-item-text {
+    width: 244px;
+    padding: 8px 14px;
+  }
+
+  .gallery-tree {
+    top: 193px;
+    bottom: 402px;
+  }
+}

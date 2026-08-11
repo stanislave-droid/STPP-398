@@ -43,6 +43,8 @@
 .about-small-star-img {
   margin-left: auto;
   margin-bottom: 29px;
+  animation: rotate 6s infinite;
+  animation-timing-function: ease;
 }
 
 .about-sand {

@@ -8,7 +8,7 @@
   position: relative;
   overflow-x: clip;
   padding-top: 206px;
-  padding-bottom: 92px;
+  padding-bottom: 93px;
 }
 
 .core-gameplay-wave-wrapper {
@@ -143,10 +143,14 @@
   right: 0;
   transform: rotate(3deg);
   width: 110px;
+  animation: rotate 12s infinite;
+  animation-timing-function: linear;
 }
 
 .core-gameplay-blue-star {
   width: 133px;
+  animation: rotate 12s infinite;
+  animation-timing-function: linear;
 }
 .core-gameplay-rope {
   position: absolute;

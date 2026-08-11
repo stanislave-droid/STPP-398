@@ -28,14 +28,14 @@
   pointer-events: none;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 .why-download-decor-left {
   left: 0;
-  bottom: 10px;
+  bottom: -8px;
   width: 90px;
-  height: 163px;
+  height: 193px;
   background-image: url('/img/partials/who dowload/line-left-mob.png');
   background-image: -webkit-image-set(url('/img/partials/who dowload/line-left-mob.png') 1x,
       url('/img/partials/who dowload/line-left-mob-2x.png') 2x);
@@ -45,9 +45,9 @@
 
 .why-download-decor-right {
   right: 0;
-  bottom: 10px;
-  width: 89px;
-  height: 163px;
+  bottom: -8px;
+  width: 90px;
+  height: 193px;
   background-image: url('/img/partials/who dowload/line-rigth-mob.png');
   background-image: -webkit-image-set(url('/img/partials/who dowload/line-rigth-mob.png') 1x,
       url('/img/partials/who dowload/line-rigth-mob2x.png') 2x);
@@ -104,7 +104,7 @@
   margin: 32px auto 0;
   padding: 16px 32px;
   gap: 10px;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -161,7 +161,7 @@
     margin-top: 16px;
     padding: 16px 32px;
     gap: 10px;
-    font-size: 18px;
+    font-size: 32px;
   }
 
   .why-download-button-icon {
