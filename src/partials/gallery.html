@@ -1,5 +1,36 @@
 <section class="gallery" id="gallery" data-observer="section">
   <div class="container">
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <filter id="gallery-wind" x="-30%" y="-30%" width="160%" height="160%">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.012 0.045"
+          numOctaves="2"
+          seed="7"
+          result="noise"
+        >
+          <animate
+            attributeName="baseFrequency"
+            dur="6.5s"
+            values="0.010 0.040;0.017 0.055;0.010 0.040"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        >
+          <animate
+            attributeName="scale"
+            dur="2.8s"
+            values="6;16;6"
+            repeatCount="indefinite"
+          />
+        </feDisplacementMap>
+      </filter>
+    </svg>
     <p class="gallery-label section-label" data-aos="fade-right">Gallery</p>
     <h2 class="gallery-headding headding-primary-shadow" data-aos="fade-right">
       Visual Style

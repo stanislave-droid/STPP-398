@@ -70,6 +70,35 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  transform-origin: 75% 100%;
+  animation: gallery-tree-sway 5.5s ease-in-out infinite;
+  filter: url(#gallery-wind);
+  will-change: transform;
+}
+
+@keyframes gallery-tree-sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  22% {
+    transform: rotate(2.6deg);
+  }
+  50% {
+    transform: rotate(-1.4deg);
+  }
+  76% {
+    transform: rotate(1.8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-tree {
+    animation: none;
+    filter: none;
+  }
 }
 
 @media screen and (min-width: 1440px) {
