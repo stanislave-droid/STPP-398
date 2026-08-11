@@ -139,15 +139,55 @@
     animation-timing-function: linear;
   }
 
-  .reviews-decor-right {
-    right: 79px;
-    top: 64px;
-    width: 123px;
-    height: 125px;
-    animation: jumping 3s infinite;
-    animation-timing-function: ease-in-out;
-  }
+    .reviews-decor-right {
+      right: 79px;
+      top: 64px;
+      width: 123px;
+      height: 125px;
+      overflow: hidden;
+      animation: jumping 3s ease-in-out infinite;
 
+      -webkit-mask-image: url('/img/partials/revievs/money.png');
+      mask-image: url('/img/partials/revievs/money.png');
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+
+    .reviews-coin-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .reviews-coin-shine {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .reviews-coin-shine::before {
+      content: '';
+      position: absolute;
+      top: -35%;
+      left: -75%;
+      width: 52%;
+      height: 170%;
+      transform: rotate(20deg);
+      background: linear-gradient(90deg,
+          transparent 0%,
+          rgba(255, 244, 172, 0.2) 18%,
+          rgba(255, 255, 225, 0.9) 50%,
+          rgba(255, 244, 172, 0.2) 82%,
+          transparent 100%);
+      filter: blur(3px);
+      animation: reviews-coin-shine 2.8s ease-in-out infinite;
+    }
   .reviews-heading {
     max-width: none;
     font-size: 40px;
@@ -192,5 +232,23 @@
   .reviews-text {
     font-size: 12px;
     line-height: 1.4;
+  }
+}
+@keyframes reviews-coin-shine {
+
+  0%,
+  20% {
+    left: -75%;
+  }
+
+  70%,
+  100% {
+    left: 135%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews-coin-shine::before {
+    animation: none;
   }
 }
