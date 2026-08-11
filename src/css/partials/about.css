@@ -4,6 +4,7 @@
   flex-direction: column;
   flex-flow: column-reverse;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding-top: 74px;
 }
 
