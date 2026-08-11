@@ -6,7 +6,7 @@
   position: relative;
   background-color: var(--primary-background-color);
   padding-top: 0;
-  padding-bottom: 163px;
+  padding-bottom: 110px;
 }
 
 .why-download > .container::after {
@@ -33,26 +33,34 @@
 
 .why-download-decor-left {
   left: 0;
-  bottom: -8px;
+  bottom: -70px;
   width: 90px;
   height: 193px;
   background-image: url('/img/partials/who dowload/line-left-mob.png');
-  background-image: -webkit-image-set(url('/img/partials/who dowload/line-left-mob.png') 1x,
-      url('/img/partials/who dowload/line-left-mob-2x.png') 2x);
-  background-image: image-set(url('/img/partials/who dowload/line-left-mob.png') 1x,
-      url('/img/partials/who dowload/line-left-mob-2x.png') 2x);
+  background-image: -webkit-image-set(
+    url('/img/partials/who dowload/line-left-mob.png') 1x,
+    url('/img/partials/who dowload/line-left-mob-2x.png') 2x
+  );
+  background-image: image-set(
+    url('/img/partials/who dowload/line-left-mob.png') 1x,
+    url('/img/partials/who dowload/line-left-mob-2x.png') 2x
+  );
 }
 
 .why-download-decor-right {
   right: 0;
-  bottom: -8px;
+  bottom: -70px;
   width: 90px;
   height: 193px;
   background-image: url('/img/partials/who dowload/line-rigth-mob.png');
-  background-image: -webkit-image-set(url('/img/partials/who dowload/line-rigth-mob.png') 1x,
-      url('/img/partials/who dowload/line-rigth-mob2x.png') 2x);
-  background-image: image-set(url('/img/partials/who dowload/line-rigth-mob.png') 1x,
-      url('/img/partials/who dowload/line-rigth-mob2x.png') 2x);
+  background-image: -webkit-image-set(
+    url('/img/partials/who dowload/line-rigth-mob.png') 1x,
+    url('/img/partials/who dowload/line-rigth-mob2x.png') 2x
+  );
+  background-image: image-set(
+    url('/img/partials/who dowload/line-rigth-mob.png') 1x,
+    url('/img/partials/who dowload/line-rigth-mob2x.png') 2x
+  );
 }
 
 .why-download-container {
@@ -126,10 +134,14 @@
     width: 298px;
     height: 540px;
     background-image: url('/img/partials/who dowload/line-left.png');
-    background-image: -webkit-image-set(url('/img/partials/who dowload/line-left.png') 1x,
-        url('/img/partials/who dowload/line-left2x.png') 2x);
-    background-image: image-set(url('/img/partials/who dowload/line-left.png') 1x,
-        url('/img/partials/who dowload/line-left2x.png') 2x);
+    background-image: -webkit-image-set(
+      url('/img/partials/who dowload/line-left.png') 1x,
+      url('/img/partials/who dowload/line-left2x.png') 2x
+    );
+    background-image: image-set(
+      url('/img/partials/who dowload/line-left.png') 1x,
+      url('/img/partials/who dowload/line-left2x.png') 2x
+    );
   }
 
   .why-download-decor-right {
@@ -137,10 +149,14 @@
     width: 298px;
     height: 540px;
     background-image: url('/img/partials/who dowload/line-right.png');
-    background-image: -webkit-image-set(url('/img/partials/who dowload/line-right.png') 1x,
-        url('/img/partials/who dowload/line-right2x.png') 2x);
-    background-image: image-set(url('/img/partials/who dowload/line-right.png') 1x,
-        url('/img/partials/who dowload/line-right2x.png') 2x);
+    background-image: -webkit-image-set(
+      url('/img/partials/who dowload/line-right.png') 1x,
+      url('/img/partials/who dowload/line-right2x.png') 2x
+    );
+    background-image: image-set(
+      url('/img/partials/who dowload/line-right.png') 1x,
+      url('/img/partials/who dowload/line-right2x.png') 2x
+    );
   }
 
   .why-download-heading {
