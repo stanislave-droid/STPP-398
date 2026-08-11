@@ -135,6 +135,8 @@
     width: 85px;
     height: 83px;
     transform: translateY(-50%);
+    animation: jumping 3s infinite;
+    animation-timing-function: ease-in-out;
   }
 
   .reviews-decor-right {
@@ -176,12 +178,14 @@
     width: 52%;
     height: 170%;
     transform: rotate(20deg);
-    background: linear-gradient(90deg,
-        transparent 0%,
-        rgba(255, 244, 172, 0.2) 18%,
-        rgba(255, 255, 225, 0.9) 50%,
-        rgba(255, 244, 172, 0.2) 82%,
-        transparent 100%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 244, 172, 0.2) 18%,
+      rgba(255, 255, 225, 0.9) 50%,
+      rgba(255, 244, 172, 0.2) 82%,
+      transparent 100%
+    );
     filter: blur(3px);
     animation: reviews-coin-shine 2.8s ease-in-out infinite;
   }
@@ -234,7 +238,6 @@
 }
 
 @keyframes reviews-coin-shine {
-
   0%,
   20% {
     left: -75%;
