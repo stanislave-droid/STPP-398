@@ -19,9 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/STPP-398/assets/vendor-BbZn6H4r.js"></script>
-    <script type="module" crossorigin src="/STPP-398/assets/main-BOIMQX68.js"></script>
+    <script type="module" crossorigin src="/STPP-398/assets/main-CysIZGbF.js"></script>
+    <link rel="stylesheet" crossorigin href="/STPP-398/assets/main-BsRKR71_.css">
     <link rel="stylesheet" crossorigin href="/STPP-398/assets/vendor-B0a9OMnn.css">
-    <link rel="stylesheet" crossorigin href="/STPP-398/assets/styles-Cx1TL3IX.css">
   </head>
   <body>
     <header class="header ">
@@ -30,35 +30,53 @@
       <a href="./index.html" class="header-logo logo"
         >Pop Island: Match Build</a
       >
-      <ul class="header-links {=$visible}">
-        <li class="header-links-wrapper">
-          <a href="#about" class="header-link" data-link>About the Game</a>
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#core-gameplay" class="header-link" data-link
-            >Core Gameplay</a
-          >
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#gallery" class="header-link" data-link>Gallery</a>
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#reviews" class="header-link" data-link>Reviews</a>
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#why-download" class="header-link" data-link>Why Download</a>
-        </li>
-      </ul>
-      <a
-        href="https://play.google.com/store/apps/details?id=com.hmbdgames.popisland&hl=en&gl=us"
-        class="header-playmarket-link button-effects {=$visible}"
-        target="_blank"
+      <div
+        class="mobile-menu"
+        id="mobile-menu"
+        data-visible="false"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
       >
-        <svg width="22" height="24">
-          <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-playmarket"></use>
-        </svg>
-        Play on Google Play</a
-      ><button class="header-burger-menu" data-action="open">
+        <ul class="header-links">
+          <li class="header-links-wrapper">
+            <a href="#about" class="header-link" data-link>About the Game</a>
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#core-gameplay" class="header-link" data-link
+              >Core Gameplay</a
+            >
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#gallery" class="header-link" data-link>Gallery</a>
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#reviews" class="header-link" data-link>Reviews</a>
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#why-download" class="header-link" data-link
+              >Why Download</a
+            >
+          </li>
+        </ul>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.hmbdgames.popisland&hl=en&gl=us"
+          class="header-playmarket-link button-effects"
+          target="_blank"
+        >
+          <svg width="22" height="24">
+            <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-playmarket"></use>
+          </svg>
+          Play on Google Play</a
+        >
+      </div>
+      <button
+        class="header-burger-menu"
+        data-action="open"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+      >
         <svg width="66" height="32" class="header-burger-menu-open">
           <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-burger-menu"></use>
         </svg>
@@ -126,17 +144,19 @@
       class="about-content-wrapper"
       aria-label="content of the section about"
     >
-      <p class="about-label section-label">About the Game</p>
-      <h2 class="about-headding headding-primary-shadow">
+      <p class="about-label section-label" data-aos="fade-left">
+        About the Game
+      </p>
+      <h2 class="about-headding headding-primary-shadow" data-aos="fade-right">
         Build a thriving island one puzzle at a time
       </h2>
-      <p class="about-text about-text-first">
+      <p class="about-text about-text-first" data-aos="fade-left">
         Every completed puzzle provides resources to rebuild abandoned
         structures, decorate landscapes, and expand the island. As players
         progress, new districts, exciting renovation projects, and charming
         stories unfold across the tropical world.
       </p>
-      <p class="about-text about-text-second">
+      <p class="about-text about-text-second" data-aos="fade-right">
         From quiet beaches to lively marketplaces, every improvement makes the
         island feel more alive.
       </p>
@@ -208,12 +228,17 @@
       </picture>
     </div>
     <div class="core-gameplay-content-wraper">
-      <p class="core-gameplay-label section-label">Core Gameplay</p>
-      <h2 class="core-gameplay-headding headding-primary-shadow">
+      <p class="core-gameplay-label section-label" data-aos="fade-right">
+        Core Gameplay
+      </p>
+      <h2
+        class="core-gameplay-headding headding-primary-shadow"
+        data-aos="fade-right"
+      >
         Match, build, and explore
       </h2>
       <ul class="core-gameplay-island-list">
-        <li class="core-gameplay-island">
+        <li class="core-gameplay-island" data-aos="fade-up-left">
           <h3 class="core-gameplay-island-headding">
             Solve Colorful Match-3 Levels
           </h3>
@@ -238,7 +263,7 @@
             />
           </picture>
         </li>
-        <li class="core-gameplay-island">
+        <li class="core-gameplay-island" data-aos="fade-up-right">
           <h3 class="core-gameplay-island-headding">
             Restore Island Buildings
           </h3>
@@ -263,7 +288,7 @@
             />
           </picture>
         </li>
-        <li class="core-gameplay-island">
+        <li class="core-gameplay-island" data-aos="fade-up-left">
           <h3 class="core-gameplay-island-headding">Unlock New Areas</h3>
           <p class="core-gameplay-island-text">
             Explore hidden beaches, tropical forests, waterfalls, and mountain
@@ -287,7 +312,7 @@
             />
           </picture>
         </li>
-        <li class="core-gameplay-island">
+        <li class="core-gameplay-island" data-aos="fade-up-right">
           <h3 class="core-gameplay-island-headding">Collect Useful Boosters</h3>
           <p class="core-gameplay-island-text">
             Use powerful combinations to overcome challenging puzzles.
@@ -310,7 +335,7 @@
             />
           </picture>
         </li>
-        <li class="core-gameplay-island">
+        <li class="core-gameplay-island" data-aos="fade-up-left">
           <h3 class="core-gameplay-island-headding">
             Personalize Your Paradise
           </h3>
@@ -393,7 +418,144 @@
 </section>
 
       <section class="gallery" id="gallery" data-observer="section">
-  <div class="container"></div>
+  <div class="container">
+    <p class="gallery-label section-label" data-aos="fade-right">Gallery</p>
+    <h2 class="gallery-headding headding-primary-shadow" data-aos="fade-right">
+      Visual Style
+    </h2>
+    <picture>
+      <source
+        srcset="/STPP-398/assets/gallery-log-BZozBlle.png, /STPP-398/assets/gallery-log-2x-C3SopMxT.png 2x"
+        media="(width >= 1440px)"
+        width="1440"
+        height="129"
+      />
+      <img
+        src="/STPP-398/assets/gallery_log-mob-DZGVDC0D.png"
+        alt="log"
+        loading="lazy"
+        width="375"
+        height="129"
+        srcset="/STPP-398/assets/gallery-log-mob-2x-VYKvuTQN.png 2x"
+        class="gallery-log"
+        data-aos="fade-left"
+      />
+    </picture>
+    <ul class="gallery-list">
+      <li class="gallery-item" data-aos="fade-up">
+        <picture>
+          <source
+            srcset="/STPP-398/assets/gallery-tropical-LHi5WyIW.png, /STPP-398/assets/gallery-tropical-2x-CBDwWwzz.png 2x"
+            media="(width >= 1440px)"
+            width="494"
+            height="327"
+          />
+          <img
+            src="/STPP-398/assets/gallery-tropical-mob-BDJxqWs6.png"
+            alt="tropical"
+            loading="lazy"
+            width="343"
+            height="227"
+            srcset="/STPP-398/assets/gallery-tropical-mob-2x-BenpXq-u.png 2x"
+            class="gallery-item-img"
+          />
+        </picture>
+        <h3 class="gallery-item-title">Tropical Landscapes</h3>
+        <p class="gallery-item-text">
+          Golden beaches, turquoise lagoons, palm trees, and colorful gardens.
+        </p>
+      </li>
+      <li class="gallery-item" data-aos="fade-up">
+        <picture>
+          <source
+            srcset="/STPP-398/assets/gallery-architecture-Bls-9iJQ.png, /STPP-398/assets/gallery-architecture-2x-DV4X1aah.png 2x"
+            media="(width >= 1440px)"
+            width="494"
+            height="327"
+          />
+          <img
+            src="/STPP-398/assets/gallery-architecture-mob-D_1B8c7N.png"
+            alt="architecture"
+            loading="lazy"
+            width="343"
+            height="227"
+            srcset="/STPP-398/assets/gallery-architecture-mob-2x-BO1W9Fum.png 2x"
+            class="gallery-item-img"
+          />
+        </picture>
+        <h3 class="gallery-item-title">Cozy Island Architecture</h3>
+        <p class="gallery-item-text">
+          Wooden cottages, beach cafés, harbors, and charming village squares.
+        </p>
+      </li>
+      <li class="gallery-item" data-aos="fade-up">
+        <picture>
+          <source
+            srcset="/STPP-398/assets/gallery-effects-fe3qVPer.png, /STPP-398/assets/gallery-effects-2x-DIBeWGHf.png 2x"
+            media="(width >= 1440px)"
+            width="494"
+            height="327"
+          />
+          <img
+            src="/STPP-398/assets/gallery-effects-mob-BMwbHofF.png"
+            alt="effects"
+            loading="lazy"
+            width="343"
+            height="227"
+            srcset="/STPP-398/assets/gallery-effects-mob-2x-DNAX_bND.png 2x"
+            class="gallery-item-img"
+          />
+        </picture>
+        <h3 class="gallery-item-title">Vibrant Puzzle Effects</h3>
+        <p class="gallery-item-text">
+          Smooth animations, bright explosions, and satisfying match
+          combinations.
+        </p>
+      </li>
+      <li class="gallery-item" data-aos="fade-up">
+        <picture>
+          <source
+            srcset="/STPP-398/assets/gallery-atmosphere-BgB77Vfd.png, /STPP-398/assets/gallery-atmosphere-2x-B7rVQ9He.png 2x"
+            media="(width >= 1440px)"
+            width="494"
+            height="327"
+          />
+          <img
+            src="/STPP-398/assets/gallery-atmosphere-mob-CvWOlNdw.png"
+            alt="atmosphere"
+            loading="lazy"
+            width="343"
+            height="227"
+            srcset="/STPP-398/assets/gallery-atmosphere-mob-2x-DbVrguuJ.png 2x"
+            class="gallery-item-img"
+          />
+        </picture>
+        <h3 class="gallery-item-title">Relaxing Atmosphere</h3>
+        <p class="gallery-item-text">
+          Warm sunlight, ocean breezes, and cheerful colors create a true
+          vacation feeling.
+        </p>
+      </li>
+    </ul>
+    <picture>
+      <source
+        srcset="/STPP-398/assets/gallery-tree-DtS4DzTa.png, /STPP-398/assets/gallery-tree-2x-BDGU7m3v.png 2x"
+        media="(width >= 1440px)"
+        width="412"
+        height="583"
+      />
+      <img
+        src="/STPP-398/assets/gallery-tree-mob--EnXT-68.png"
+        alt="tree"
+        width="180"
+        height="254"
+        loading="lazy"
+        srcset="/STPP-398/assets/gallery-tree-mob-2x-Dqk3lpU0.png"
+        class="gallery-tree"
+        data-aos="fade-up-left"
+      />
+    </picture>
+  </div>
 </section>
 
       <section class="reviews" id="reviews" data-observer="section">
@@ -414,34 +576,62 @@
       width="123"
       height="125"
     />
-    <p class="reviews-eyebrow">Reviews</p>
-    <h2 class="reviews-heading headding-primary-shadow">
+    <p class="reviews-eyebrow" data-aos="fade-right">Reviews</p>
+    <h2 class="reviews-heading headding-primary-shadow" data-aos="fade-right">
       Players are building<br class="reviews-heading-break" />
       their dream island
     </h2>
     <div class="reviews-grid">
       <ul class="reviews-row">
-        <li class="reviews-card">
-          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+        <li class="reviews-card" data-aos="fade-right">
+          <div
+            class="reviews-rating"
+            role="img"
+            aria-label="Rating: 5 out of 5 stars"
+          >
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
           </div>
           <p class="reviews-author">Emma R.</p>
           <p class="reviews-text">
-            "Every renovation makes the island more beautiful. It's hard to
-            stop playing!"
+            "Every renovation makes the island more beautiful. It's hard to stop
+            playing!"
           </p>
         </li>
-        <li class="reviews-card">
-          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+        <li class="reviews-card" data-aos="fade-left">
+          <div
+            class="reviews-rating"
+            role="img"
+            aria-label="Rating: 5 out of 5 stars"
+          >
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
           </div>
           <p class="reviews-author">Daniel M.</p>
           <p class="reviews-text">
@@ -450,13 +640,27 @@
         </li>
       </ul>
       <ul class="reviews-row">
-        <li class="reviews-card">
-          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+        <li class="reviews-card" data-aos="fade-right">
+          <div
+            class="reviews-rating"
+            role="img"
+            aria-label="Rating: 5 out of 5 stars"
+          >
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
           </div>
           <p class="reviews-author">Sophia K.</p>
           <p class="reviews-text">
@@ -464,31 +668,59 @@
             rewarding."
           </p>
         </li>
-        <li class="reviews-card">
-          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+        <li class="reviews-card" data-aos="fade-up">
+          <div
+            class="reviews-rating"
+            role="img"
+            aria-label="Rating: 5 out of 5 stars"
+          >
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star-empty"></use>
+            </svg>
           </div>
           <p class="reviews-author">James T.</p>
           <p class="reviews-text">
             "Great puzzle variety with lots of decorations to unlock."
           </p>
         </li>
-        <li class="reviews-card">
-          <div class="reviews-rating" role="img" aria-label="Rating: 5 out of 5 stars">
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
-            <svg class="reviews-star" aria-hidden="true" focusable="false"><use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use></svg>
+        <li class="reviews-card" data-aos="fade-left">
+          <div
+            class="reviews-rating"
+            role="img"
+            aria-label="Rating: 5 out of 5 stars"
+          >
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
+            <svg class="reviews-star" aria-hidden="true" focusable="false">
+              <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-star"></use>
+            </svg>
           </div>
           <p class="reviews-author">Olivia P.</p>
           <p class="reviews-text">
-            "Perfect game for anyone who loves relaxing adventures and
-            creative building."
+            "Perfect game for anyone who loves relaxing adventures and creative
+            building."
           </p>
         </li>
       </ul>
@@ -498,16 +730,23 @@
 
       <section class="why-download" id="why-download" data-observer="section">
   <div class="container why-download-container">
-    <div class="why-download-decor why-download-decor-left" aria-hidden="true"></div>
-    <p class="why-download-eyebrow">Why Download</p>
-    <h2 class="why-download-heading headding-primary-shadow">
+    <div
+      class="why-download-decor why-download-decor-left"
+      aria-hidden="true"
+      data-aos="fade-up-right"
+    ></div>
+    <p class="why-download-eyebrow" data-aos="fade-right">Why Download</p>
+    <h2
+      class="why-download-heading headding-primary-shadow"
+      data-aos="fade-right"
+    >
       Escape to your own<br />tropical paradise
     </h2>
-    <p class="why-download-text">
-      Pop Island: Match Build combines relaxing puzzle gameplay with
-      rewarding island restoration. Every completed level transforms the
-      environment, unlocks new discoveries, and brings players closer to
-      creating a dream destination filled with beauty and adventure.
+    <p class="why-download-text" data-aos="fade-right">
+      Pop Island: Match Build combines relaxing puzzle gameplay with rewarding
+      island restoration. Every completed level transforms the environment,
+      unlocks new discoveries, and brings players closer to creating a dream
+      destination filled with beauty and adventure.
     </p>
     <a
       href="https://play.google.com/store/apps/details?id=com.hmbdgames.popisland&hl=en&gl=us"
@@ -520,7 +759,11 @@
       </svg>
       Play on Google Play</a
     >
-    <div class="why-download-decor why-download-decor-right" aria-hidden="true"></div>
+    <div
+      class="why-download-decor why-download-decor-right"
+      aria-hidden="true"
+      data-aos="fade-up-left"
+    ></div>
   </div>
 </section>
 

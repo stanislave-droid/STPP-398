@@ -18,44 +18,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" crossorigin href="/STPP-398/assets/styles-Cx1TL3IX.css">
+    <script type="module" crossorigin src="/STPP-398/assets/vendor-BbZn6H4r.js"></script>
+    <script type="module" crossorigin src="/STPP-398/assets/main-CysIZGbF.js"></script>
+    <link rel="stylesheet" crossorigin href="/STPP-398/assets/vendor-B0a9OMnn.css">
+    <link rel="stylesheet" crossorigin href="/STPP-398/assets/main-BsRKR71_.css">
   </head>
   <body>
-    <header class="header header-hidden">
+    <header class="header ">
   <div class="container">
     <nav class="main-navigation">
       <a href="./index.html" class="header-logo logo"
         >Pop Island: Match Build</a
       >
-      <ul class="header-links header-links-hidden">
-        <li class="header-links-wrapper">
-          <a href="#about" class="header-link" data-link>About the Game</a>
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#core-gameplay" class="header-link" data-link
-            >Core Gameplay</a
-          >
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#gallery" class="header-link" data-link>Gallery</a>
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#reviews" class="header-link" data-link>Reviews</a>
-        </li>
-        <li class="header-links-wrapper">
-          <a href="#why-download" class="header-link" data-link>Why Download</a>
-        </li>
-      </ul>
-      <a
-        href="https://play.google.com/store/apps/details?id=com.hmbdgames.popisland&hl=en&gl=us"
-        class="header-playmarket-link button-effects header-links-hidden"
-        target="_blank"
+      <div
+        class="mobile-menu"
+        id="mobile-menu"
+        data-visible="false"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
       >
-        <svg width="22" height="24">
-          <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#playmarket"></use>
-        </svg>
-        Play on Google Play</a
-      ><button class="header-burger-menu" data-action="open">
+        <ul class="header-links">
+          <li class="header-links-wrapper">
+            <a href="#about" class="header-link" data-link>About the Game</a>
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#core-gameplay" class="header-link" data-link
+              >Core Gameplay</a
+            >
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#gallery" class="header-link" data-link>Gallery</a>
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#reviews" class="header-link" data-link>Reviews</a>
+          </li>
+          <li class="header-links-wrapper">
+            <a href="#why-download" class="header-link" data-link
+              >Why Download</a
+            >
+          </li>
+        </ul>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.hmbdgames.popisland&hl=en&gl=us"
+          class="header-playmarket-link button-effects"
+          target="_blank"
+        >
+          <svg width="22" height="24">
+            <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-playmarket"></use>
+          </svg>
+          Play on Google Play</a
+        >
+      </div>
+      <button
+        class="header-burger-menu"
+        data-action="open"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+      >
         <svg width="66" height="32" class="header-burger-menu-open">
           <use href="/STPP-398/assets/sprite-SoNLmcbe.svg#icon-burger-menu"></use>
         </svg>
@@ -69,8 +90,6 @@
 
 
     <main class="legal-page legal-page-policy">
-      <div class="legal-wave" aria-hidden="true"></div>
-
       <div class="container">
         <a class="back-link links-effects" href="./index.html">
   <svg width="10" height="18">
@@ -143,8 +162,7 @@
             <p>
               If you wish for your personally identifiable information to be
               permanently deleted from our records, you may contact us at
-              <a href="mailto:contact@coreparcel.online"><span class="domain">contact@coreparcel.online</span></a>
-              .
+              <a href="mailto:contact@coreparcel.online"><span class="domain">contact@coreparcel.online</span></a>.
             </p>
           </section>
 
@@ -178,7 +196,7 @@
       </div>
     </main>
 
-    <footer class="footer footer-no-wave">
+    <footer class="footer {=$wave}">
   <div class="container">
     <a href="./index.html" class="footer-logo">
       <img
@@ -201,6 +219,7 @@
     </p>
   </div>
 </footer>
+
 
   </body>
 </html>
