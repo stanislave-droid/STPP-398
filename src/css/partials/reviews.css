@@ -132,9 +132,11 @@
   .reviews-decor-left {
     left: 117px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     width: 85px;
     height: 83px;
+    animation: jumping 3s infinite;
+    animation-timing-function: linear;
   }
 
   .reviews-decor-right {
@@ -142,6 +144,8 @@
     top: 64px;
     width: 123px;
     height: 125px;
+    animation: jumping 3s infinite;
+    animation-timing-function: ease-in-out;
   }
 
   .reviews-heading {
