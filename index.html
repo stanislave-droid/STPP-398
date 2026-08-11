@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/STPP-398/assets/vendor-BbZn6H4r.js"></script>
-    <script type="module" crossorigin src="/STPP-398/assets/main-Cx0F7Qgl.js"></script>
-    <link rel="stylesheet" crossorigin href="/STPP-398/assets/main-DH9jgcRC.css">
+    <script type="module" crossorigin src="/STPP-398/assets/main-CGFKvR1Q.js"></script>
+    <link rel="stylesheet" crossorigin href="/STPP-398/assets/main-DtQA-vzj.css">
     <link rel="stylesheet" crossorigin href="/STPP-398/assets/vendor-B0a9OMnn.css">
   </head>
   <body>
@@ -419,6 +419,37 @@
 
       <section class="gallery" id="gallery" data-observer="section">
   <div class="container">
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <filter id="gallery-wind" x="-30%" y="-30%" width="160%" height="160%">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.012 0.045"
+          numOctaves="2"
+          seed="7"
+          result="noise"
+        >
+          <animate
+            attributeName="baseFrequency"
+            dur="6.5s"
+            values="0.010 0.040;0.017 0.055;0.010 0.040"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="noise"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        >
+          <animate
+            attributeName="scale"
+            dur="2.8s"
+            values="6;16;6"
+            repeatCount="indefinite"
+          />
+        </feDisplacementMap>
+      </filter>
+    </svg>
     <p class="gallery-label section-label" data-aos="fade-right">Gallery</p>
     <h2 class="gallery-headding headding-primary-shadow" data-aos="fade-right">
       Visual Style
@@ -581,14 +612,14 @@
       />
       <span class="reviews-coin-shine"></span>
     </div>
-    <p class="reviews-eyebrow">Reviews</p>
-    <h2 class="reviews-heading headding-primary-shadow">
+    <p class="reviews-eyebrow" data-aos="fade-right">Reviews</p>
+    <h2 class="reviews-heading headding-primary-shadow" data-aos="fade-right">
       Players are building<br class="reviews-heading-break" />
       their dream island
     </h2>
     <div class="reviews-grid">
       <ul class="reviews-row">
-        <li class="reviews-card">
+        <li class="reviews-card" data-aos="fade-right">
           <div
             class="reviews-rating"
             role="img"
@@ -616,7 +647,7 @@
             playing!"
           </p>
         </li>
-        <li class="reviews-card">
+        <li class="reviews-card" data-aos="fade-left">
           <div
             class="reviews-rating"
             role="img"
@@ -645,7 +676,7 @@
         </li>
       </ul>
       <ul class="reviews-row">
-        <li class="reviews-card">
+        <li class="reviews-card" data-aos="fade-right">
           <div
             class="reviews-rating"
             role="img"
@@ -673,7 +704,7 @@
             rewarding."
           </p>
         </li>
-        <li class="reviews-card">
+        <li class="reviews-card" data-aos="fade-up">
           <div
             class="reviews-rating"
             role="img"
@@ -700,7 +731,7 @@
             "Great puzzle variety with lots of decorations to unlock."
           </p>
         </li>
-        <li class="reviews-card">
+        <li class="reviews-card" data-aos="fade-left">
           <div
             class="reviews-rating"
             role="img"
