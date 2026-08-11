@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  z-index: 999;
   width: 100%;
 }
 
@@ -29,6 +30,14 @@
 }
 
 .header-links-wrapper {
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 .header-link {
@@ -108,17 +117,82 @@
   transform: scale(0);
 }
 
-[data-visible='open'] {
-  display: flex;
-}
-
-[data-visible='close'] {
-  display: none;
-}
-
 @media screen and (min-resolution: 2x) and (-webkit-device-pixel-ratio: 2) {
   .header > .container {
     background-image: url('/img/partials/header/header-background-mob-2x.png');
+  }
+}
+
+@media screen and (max-width: 1439.98px) {
+  .header-logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header-burger-menu {
+    z-index: 2;
+  }
+
+  .mobile-menu[data-visible='true'] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 100dvh;
+    padding: 128px 16px 40px;
+    overflow-y: auto;
+    background-color: #ffe29c;
+  }
+
+  .mobile-menu .header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 209px;
+  }
+
+  .mobile-menu .header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 209px;
+    height: 55px;
+    padding: 16px 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 2px solid var(--links-buttons-color);
+    box-shadow: inset 0 -4px 4px 0 rgba(0, 0, 0, 0.24);
+    background-color: var(--links-buttons-color);
+    color: var(--primary-headding-color);
+    border-radius: 24px;
+    transition:
+      background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out;
+  }
+
+  .mobile-menu .header-link::after {
+    display: none;
+  }
+
+  .mobile-menu .header-link:hover,
+  .mobile-menu .header-link:focus-visible {
+    background-color: var(--primary-headding-color);
+    color: var(--logo-shadow-color);
+  }
+
+  .mobile-menu .header-playmarket-link {
+    display: flex;
+    flex-shrink: 0;
+    width: 343px;
   }
 }
 
@@ -130,6 +204,10 @@
 
   .header-logo {
     padding: 26px 0;
+  }
+
+  .mobile-menu {
+    display: contents;
   }
 
   .header-links {
@@ -146,6 +224,14 @@
 
   .header-terms-hidden {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-burger-menu-open,
+  .header-burger-menu-close,
+  .mobile-menu .header-link {
+    transition: none;
   }
 }
 
