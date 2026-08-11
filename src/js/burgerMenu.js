@@ -1,5 +1,8 @@
 const burgerBtnEl = document.querySelector('[data-action]');
 const mobileMenuEl = document.querySelector('[data-visible]');
+const mobileMenuConteiner = document.querySelector(
+  '[data-header-menu-background]'
+);
 
 if (burgerBtnEl && mobileMenuEl) {
   const getTrapFocusEls = () =>
@@ -13,6 +16,7 @@ if (burgerBtnEl && mobileMenuEl) {
     burgerBtnEl.setAttribute('aria-label', 'Close menu');
     mobileMenuEl.dataset.visible = 'true';
     document.body.classList.add('menu-open');
+    mobileMenuConteiner.dataset.headerMenuBackground = 'show';
 
     const firstLink = mobileMenuEl.querySelector('a[href]');
     firstLink?.focus();
@@ -24,6 +28,7 @@ if (burgerBtnEl && mobileMenuEl) {
     burgerBtnEl.setAttribute('aria-label', 'Open menu');
     mobileMenuEl.dataset.visible = 'false';
     document.body.classList.remove('menu-open');
+    mobileMenuConteiner.dataset.headerMenuBackground = '';
 
     if (returnFocus) burgerBtnEl.focus();
   };
