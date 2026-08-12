@@ -15,7 +15,7 @@ if (burgerBtnEl && mobileMenuEl) {
     burgerBtnEl.setAttribute('aria-expanded', 'true');
     burgerBtnEl.setAttribute('aria-label', 'Close menu');
     mobileMenuEl.dataset.visible = 'true';
-    document.body.classList.add('menu-open');
+    document.body.dataset.mobileMenu = 'menu-open';
     mobileMenuConteiner.dataset.headerMenuBackground = 'show';
 
     const firstLink = mobileMenuEl.querySelector('a[href]');
@@ -27,7 +27,7 @@ if (burgerBtnEl && mobileMenuEl) {
     burgerBtnEl.setAttribute('aria-expanded', 'false');
     burgerBtnEl.setAttribute('aria-label', 'Open menu');
     mobileMenuEl.dataset.visible = 'false';
-    document.body.classList.remove('menu-open');
+    document.body.dataset.mobileMenu = 'menu-close';
     mobileMenuConteiner.dataset.headerMenuBackground = '';
 
     if (returnFocus) burgerBtnEl.focus();
