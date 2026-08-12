@@ -53,7 +53,7 @@
   overflow-y: auto;
 }
 
-.menu-open {
+[data-mobile-menu='menu-open'] {
   overflow: hidden;
 }
 
@@ -137,6 +137,10 @@
 
 [data-action='close'] {
   background-color: #f6e8ce;
+}
+
+.header [data-hide-navigation='true'] {
+  display: none;
 }
 
 @media screen and (min-resolution: 2x) and (-webkit-device-pixel-ratio: 2) {
