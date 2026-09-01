@@ -8,7 +8,7 @@
   <li>Java Script (ES6+)</li>
 </ul>
 
-<h3>Design was created by: <a href="" target="_blank">Yelyzaveta Hladko - UX/UI Designer</a></h3>
+<h3>Design was created by: <a href="https://www.linkedin.com/in/yelyzaveta-hladko/" target="_blank">Yelyzaveta Hladko - UX/UI Designer - Linkedin</a></h3>
 
 <h3>Project was created by: </h3>
 <ul>
